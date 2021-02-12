@@ -1,0 +1,22 @@
+<div class="nav">
+
+  <h1>BUDGET CALC</h1>
+
+</div>
+
+<div class="amount">
+  <h1 [ngClass]="{'red':TotalAmount<0,'green':TotalAmount>0}">{{TotalAmount}}</h1>
+</div>
+
+<!-- mainp goes here   adding the items-->
+<app-mainp (formd)="onCapture($event)">
+  
+</app-mainp>
+
+<hr style="margin-top: 0;">
+<!--bucket list goes here-->
+
+<app-bucket-list [Buckets]="ItemDatas"   (delete)="onDeleteClicked($event)" (Updated)="onEdited($event)">  
+
+</app-bucket-list>  
+  

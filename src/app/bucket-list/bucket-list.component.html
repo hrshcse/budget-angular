@@ -1,0 +1,16 @@
+<div class="bucket-list">
+    <div class="bucket-list-column">
+        <div class="income">
+            <h1>Income</h1>
+            <div *ngFor="let bucket of Buckets" >
+            <app-bucket-values [Item]="bucket" (CardClicked)="onCardEdit(bucket)" (xButton)="onDelete(bucket)" *ngIf="bucket.amount>0" ></app-bucket-values>
+        </div>
+        </div>
+        <div class="expense"> 
+            <h1>Expense</h1>
+            <div *ngFor="let bucket of Buckets">
+            <app-bucket-values [Item]="bucket" (CardClicked)="onCardEdit(bucket)" (xButton)="onDelete(bucket)" *ngIf="bucket.amount<0"></app-bucket-values>  
+        </div>
+        </div>
+    </div>
+</div> 

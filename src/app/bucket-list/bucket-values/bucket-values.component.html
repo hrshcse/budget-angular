@@ -1,0 +1,11 @@
+<div class="root">
+    <div class="bucket-item " (click)="onCardClicked()" [ngClass]="{income: Item.amount>0, expense:Item.amount<0}">
+        <div class="des">
+            <p>{{Item.description}}</p>
+        </div> 
+        <div class="amount">
+            <p>{{Item.amount}}</p>
+        </div>
+    </div> 
+    <div class="x-button-icon" (click)="onClickX()"></div>
+</div>

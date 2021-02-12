@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "git-sample-d53e2"
+  },
+  "targets": {
+    "git-sample-d53e2": {
+      "hosting": {
+        "calc": [
+          "mybudgetcalc"
+        ],
+        "main": [
+          "git-sample-d53e2"
+        ]
+      }
+    }
+  }
+}

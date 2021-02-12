@@ -1,0 +1,33 @@
+@import '../styles.scss';
+.nav{
+    display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(80deg,rgb(216, 111, 120),rgb(235, 122, 70));
+height: 66px;
+width: 100%;
+
+}
+
+.amount{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    background-color: $dark;
+    h1{
+        font-size: 60px;
+        font-weight: 400;
+        &.red{
+            color:red;
+
+        }
+        &.green{
+            color:green;
+
+        }
+    }
+
+}

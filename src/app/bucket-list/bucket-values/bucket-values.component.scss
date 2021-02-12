@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+    &:hover{
+        .x-button-icon{
+            transform: scale(1);
+        }
+    }
+    .x-button-icon{
+        position: absolute;
+        right: -10px;
+        height: 30px;
+        width: 30px;
+        border-radius:50%;
+        top:-1px;
+        background-color: $dark;
+        background-image: url("../../../assets/red-x.svg"); 
+        background-repeat:none;
+        background-size: 30px 30px;
+        transform: scale(0);
+        transition: opacity 0.2s ease-out,transform 0.2s ease-out;
+
+        &:hover{
+            transform:scale(1.2);
+        }
+    }
+   
+}
+.bucket-item{
+    display: flex;
+    width: 100%;
+    background-color: $light-grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: darken($light-grey,3%);
+    }
+    .des{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    .amount{
+        padding: 5px;
+border-radius: 3px;   
+ }
+} 
+
+.expense{
+    p{color:$red;}
+    .amount{
+        background-color: $light-red;
+    }
+}
+
+.income{
+    p{color:$green;}
+    .amount{
+        background-color: $light-green;
+    }
+}
